@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/ciclistas</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">root1234</property>
+    <mapping class="org.example.DB.Ciclista"/>
+    <mapping class="org.example.DB.Equipo"/>
+    <mapping class="org.example.DB.Etapa"/>
+    <mapping class="org.example.DB.Lleva"/>
+    <mapping class="org.example.DB.LlevaId"/>
+    <mapping class="org.example.DB.Maillot"/>
+    <mapping class="org.example.DB.Puerto"/>
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
