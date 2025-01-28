@@ -53,4 +53,12 @@ public class Equipo {
         this.director = director;
     }
 
+    @Override
+    public String toString() {
+        return this.getClass().getName() +
+                " nomeq='" + nomeq + '\'' +
+                ", director='" + director + '\'' +
+                ", ciclistas=" + ciclistas +
+                '}';
+    }
 }
